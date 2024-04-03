@@ -5,7 +5,7 @@ use std::{
 };
 
 fn main() {
-    let string = fs::read_to_string("rsc/UnicodeData.txt").expect("Failed to load unicode data!");
+    let string = fs::read_to_string("res/UnicodeData.txt").expect("Failed to load unicode data!");
     let mut file = File::create(format!("{}/unicode.rs", env::var("OUT_DIR").unwrap()))
         .expect("Unable to create unicode output file!");
 
